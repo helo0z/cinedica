@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.4;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  width: 110px;
+}
+
+.input-pesquisa {
+  flex-grow: 1;
+  margin: 0 40px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.icones-header img {
+  width: 28px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+nav {
+  background-color: rgba(104, 102, 197, 1);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+main {
+  padding: 40px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.perfil {
+  margin-bottom: 40px;
+}
+
+.info-usuario {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.icone-usuario {
+  width: 60px;
+  height: 60px;
+}
+
+.titulo-descricao {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.dados-pessoais p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dados-pessoais ul {
+  list-style: none;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.dados-pessoais ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.generos-favoritos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.legenda-generos {
+  flex: 1;
+}
+
+.lista-generos {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-generos li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.lista-generos .cor {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.romance {
+  background-color: #9b59b6;
+}
+
+.terror {
+  background-color: #f1c40f;
+}
+
+.drama {
+  background-color: #3498db;
+}
+
+.aventura {
+  background-color: #1abc9c;
+}
+
+.suspense {
+  background-color: #e74c3c;
+}
+
+.animacao {
+  background-color: #e67e22;
+}
+
+.grafico {
+  width: 180px;
+  height: auto;
+}
+
+.favoritos h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.grid-filmes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.grid-filmes img {
+  width: 150px;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.grid-filmes img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: rgba(104, 102, 197, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px 40px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+#logo-footer {
+  width: 220px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.footer-info {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-info div {
+  min-width: 160px;
+}
+
+.footer-info h4 {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  cursor: default;
+}
+
+.copyright {
+  background-color: rgba(104, 102, 197, 1);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: -10px;
+}
