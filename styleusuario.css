@@ -4,169 +4,6 @@
   padding: 0;
 }
 
-html {
-  font-size: clamp(16px, 1.8vw, 24px);
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  line-height: 1.4;
-  transition: background-color 0.3s, color 0.3s;
-  width: 100%;
-  min-height: 100vh;
-  display: block;
-}
-
-.tema-claro {
-  --cor-fundo: #FFFFFF;
-  --cor-primaria: #6866C5;
-  --cor-formulario: #D9D9D9;
-  --cor-texto: #333333;
-}
-
-.tema-escuro {
-  --cor-fundo: #0D0D28;
-  --cor-primaria: #6665B8;
-  --cor-formulario: #D9D9D9;
-  --cor-texto: #FFFFFF;
-}
-
-#container {
-  width: 100%;
-  min-height: 100vh;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  display: flex;
-  flex-direction: column;
-}
-
-#btn-toggle-tema {
-  cursor: pointer;
-  padding: 1rem 2rem;
-  background-color: var(--cor-primaria);
-  color: var(--cor-texto);
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  margin: 1rem 2rem;
-  align-self: flex-end;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  border-bottom: 1px solid #ccc;
-  background-color: var(--cor-fundo);
-  flex-wrap: wrap;
-}
-
-.logo {
-  width: 8vw;
-  min-width: 100px;
-}
-
-.input-pesquisa {
-  flex-grow: 1;
-  margin: 0 2rem;
-  height: 3rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--cor-formulario);
-  padding-left: 1rem;
-  font-size: 1rem;
-  background-color: var(--cor-formulario);
-  color: var(--cor-texto);
-}
-
-.input-pesquisa::placeholder {
-  color: var(--cor-texto);
-  opacity: 0.7;
-}
-
-.icones-header img {
-  width: 2.5vw;
-  min-width: 24px;
-  margin-left: 1.5rem;
-  cursor: pointer;
-  transition: filter 0.3s;
-}
-
-.tema-escuro .icones-header img {
-  filter: invert(1);
-}
-
-nav {
-  background-color: var(--cor-primaria);
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  font-weight: bold;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-}
-
-main {
-  padding: 3vw;
-  flex: 1;
-}
-
-.perfil {
-  margin-bottom: 3rem;
-}
-
-.info-usuario {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.icone-usuario {
-  width: 4rem;
-  height: 4rem;
-}
-
-.titulo-descricao {
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.dados-pessoais p {
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.dados-pessoais ul {
-  list-style: none;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-}
-
-.dados-pessoais ul li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-.generos-favoritos {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  gap: 2rem;
-}
-
 .legenda-generos {
   flex: 1;
 }
@@ -215,93 +52,168 @@ main {
   background-color: #e67e22;
 }
 
-.grafico {
-  width: 15vw;
-  min-width: 150px;
-  height: auto;
+
+
+body{
+    margin: 0%;
+    font-family: Verdana;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.container{
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+input{
+    width: 700px;
+    height: 40px;
+}
+.icones{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    gap: 30px;
+}
+nav{
+    background-color: rgba(104, 102, 197, 1);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#classificaçao{
+    margin-left: 75px;
+}
+.filme1{
+    width: 17%;
+    height: 350px;
+    border-radius: 30px;
+}
+.filme2{
+    width: 17%;
+    height: 350px;
+    border-radius: 30px;
+}
+.poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.filmes1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.filmes2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
 }
 
-.favoritos h2 {
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  font-size: 2rem;
+  footer {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(104, 102, 197, 1);
+        padding:  25px 0px;
+        gap: 100px;
+        color: white;
 }
 
-.grid-filmes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 2vw;
+    #logocinedica2{
+        width: 250px;
+        height: 70px;
 }
 
-.grid-filmes img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2/3;
-  border-radius: 1rem;
-  object-fit: cover;
-  transition: transform 0.3s;
+    #linhahorizontal{
+        border-bottom:  2px solid #ffffff;
+
+    }
+    .copyright{
+        text-align: center;
+        background-color: rgba(104, 102, 197, 1);
+        color: white;
+}
+.filme1:hover{
+    width: 18%;
+    height: 370px;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+.filme2:hover{
+    width: 18%;
+    height: 370px;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+input:hover{
+    background-color: lightgray;
+    transition: 0.5s;
+}
+body.dark-mode {
+    background-color:  rgba(13, 13, 40, 1);
+    color: white;
 }
 
-.grid-filmes img:hover {
-  transform: scale(1.05);
+body.dark-mode nav,
+body.dark-mode footer,
+body.dark-mode .copyright {
+    background-color: rgba(104, 102, 197, 1);
+    color: white;
 }
 
-.tema-escuro .grid-filmes img {
-  filter: brightness(0.8);
+body.dark-mode input {
+    background-color:  rgba(13, 13, 40, 1);
+    color: white;
+    border: 1px solid #555;
 }
 
-footer {
-  background-color: var(--cor-primaria);
-  color: white;
+body.dark-mode a {
+    color: #cfcfcf;
+}
+
+body.dark-mode .filme1,
+body.dark-mode .filme2 {
+    background-color:  rgba(13, 13, 40, 1);
+}
+
+.generos-favoritos > img{
+    width: 160px;
+    height: 160px;
+}
+
+.generos-favoritos{
   display: flex;
-  justify-content: center;
-  padding: 2rem;
-  gap: 5rem;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
 }
 
-#logo-footer {
-  width: 15vw;
-  min-width: 180px;
-  height: auto;
-  margin-right: 2rem;
-}
-
-.footer-info {
+section{
   display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.footer-info div {
-  min-width: 160px;
+.legenda-generos {
+  flex: 1;
 }
 
-.footer-info h4 {
-  margin-bottom: 0.8rem;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.footer-info p {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.copyright {
-  background-color: var(--cor-primaria);
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 1rem;
-  margin-top: -0.5rem;
-}
-
-.emoji-usuario {
-  font-size: 3rem;
-  display: inline-block;
-  width: 48px;  
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
+.perfil {
+  display: flex;
+  flex-direction: row;      
+  justify-content: space-between; 
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px; 
 }

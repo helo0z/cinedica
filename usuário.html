@@ -7,26 +7,28 @@
 </head>
 <body>
 
-  <div id="container" class="tema-claro">
-    <header>
-      <img src="logocinedica.png" alt="Logo CineDica" class="logo" />
-      <input type="text" placeholder="pesquise o tipo de filme que deseja" class="input-pesquisa" />
-      <div class="icones-header">
-        <img src="íconecoração.png" alt="Favoritos" />
-        <img src="íconeusuario.png" alt="Perfil" />
-        <img src="íconetemas.png" alt="Temas" id="btn-tema" />
-      </div>
-    </header>
+  <header>
+    <img src="logocinedica-removebg-preview.png" alt="logo">
+    <div class="pesquisa">
+      <input type="text" placeholder="pesquise o tipo de filme que deseja">
+    </div>
+    <div class="icones">
+      <a href="usuário.html"><img src="íconecoração-removebg-preview.png" alt="erro ao carregar"></a>
+      <a href="cadastro (1).html"><img src="íconeusuario-removebg-preview.png" alt="erro ao carregar"></a>
+      <button id="toggleDarkMode"><img src="íconetemas-removebg-preview.png" alt="erro ao carregar"></button>
+    </div>
+  </header>
 
-    <nav>
-      <a href="ladingpage2.html">Home</a>
-      <a href="lancamentos.html">Lançamentos</a>
-      <a href="populares.html">Populares</a>
-      <a href="classicos.html">Clássicos</a>
-    </nav>
+  <nav>
+    <a href="ladingpage2.html">Home</a>
+    <a href="lancamentos.html">Lançamentos</a>
+    <a href="populares.html">Populares</a>
+    <a href="classicos.html">Clássicos</a>
+  </nav>
 
-    <main>
-      <section class="perfil">
+  <main>
+    <section class="perfil">
+      <div class="formulario-perfil">
         <div class="info-usuario">
           <span class="emoji-usuario" aria-label="ícone usuário" role="img">👤</span>
           <div>
@@ -36,76 +38,105 @@
         </div>
 
         <p class="titulo-descricao"><strong>Adicionar descrição:</strong></p>
+        <input type="text">
 
         <div class="dados-pessoais">
           <p><strong>Adicionar informações pessoais:</strong></p>
           <ul>
-            <li>Idade:</li>
-            <li>Sexo:</li>
-            <li>Data de nascimento:</li>
-            <li>Gênero favorito:</li>
-            <li>Filme favorito:</li>
+            <li>Idade:</li><input type="text">
+            <li>Sexo:</li><input type="text">
+            <li>Data de nascimento:</li><input type="text">
+            <li>Gênero favorito:</li><input type="text">
+            <li>Filme favorito:</li><input type="text">
           </ul>
         </div>
+      </div>
 
-        <div class="generos-favoritos">
-          <div class="legenda-generos">
-            <p><strong>Filmes favoritos:</strong></p>
-            <ul class="lista-generos">
-              <li><span class="cor romance"></span> Romance</li>
-              <li><span class="cor terror"></span> Terror</li>
-              <li><span class="cor drama"></span> Drama</li>
-              <li><span class="cor aventura"></span> Aventura</li>
-              <li><span class="cor suspense"></span> Suspense</li>
-            </ul>
-          </div>
-          <img src="grafico-generos.png" alt="Gráfico de gêneros favoritos" class="grafico" />
-        </div>
-      </section>
-
-      <section class="favoritos">
-        <h2>Favoritos:</h2>
-        <div class="grid-filmes">
-          <img src="ação 8.jpg" alt="Beekeeper" />
-          <img src="comédia1.jpg" alt="Bebê, Não Case" />
-          <img src="romance2.webp" alt="Continências ao Amor" />
-          <img src="patricinhas.jpg" alt="As Patricinhas de Beverly Hills" />
-          <img src="lançamento4.jpg" alt="Capitão América" />
-          <img src="filme6.webp" alt="Capitã Marvel" />
-          <img src="comédia2.jpg" alt="Os Parças" />
-          <img src="terror 6.webp" alt="Chucky" />
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <img src="logocinedica2.png" alt="Logo CineDica" id="logo-footer" />
-      <div class="footer-info">
-        <div>
-          <h4>SIGA-NOS:</h4>
-          <p>@Cinedica_oficial</p>
-          <p>(84) 9808-1288</p>
-        </div>
-        <div>
-          <h4>LINKS RÁPIDOS:</h4>
-          <p>Política de Privacidade</p>
-          <p>Termos de Uso</p>
-        </div>
-        <div>
-          <h4>SUPORTE:</h4>
-          <p>Central de Ajuda</p>
-          <p>Fale com o Suporte</p>
-          <p>Enviar Feedback</p>
-          <p>Relatar Problema no Site</p>
+      <div class="generos-favoritos">
+        <img src="grafico-generos.png" alt="Gráfico de gêneros favoritos" class="grafico" />
+        <div class="legenda-generos">
+          <p><strong>Filmes favoritos:</strong></p>
+          <ul class="lista-generos">
+            <li><span class="cor romance"></span> Romance</li>
+            <li><span class="cor terror"></span> Terror</li>
+            <li><span class="cor drama"></span> Drama</li>
+            <li><span class="cor aventura"></span> Aventura</li>
+            <li><span class="cor suspense"></span> Suspense</li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <div class="copyright">
-      Copyright © 2025 CineDica – Todos os direitos reservados
+  <div class="container">
+    <h2 id="classificaçao">Favoritos:</h2>
+    <div class="filmes">
+      <div class="filmes1">
+        <div class="filme1">
+          <img src="../cinedicas/imagens/ação 8.jpg" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Beekeeper<br><strong>Gênero:</strong> Ação</p>
+        </div>
+        <div class="filme1">
+          <img src="../cinedicas/imagens/comédia1.jpg" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Bebê, Não Case<br><strong>Gênero:</strong> Comédia</p>
+        </div>
+        <div class="filme1">
+          <img src="romance2.webp" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Continências ao Amor<br><strong>Gênero:</strong> Romance</p>
+        </div>
+        <div class="filme1">
+          <img src="patricinhas.jpg" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> As Patricinhas de Beverly Hills<br><strong>Gênero:</strong> Comédia</p>
+        </div>
+      </div>
+
+      <div class="filmes2">
+        <div class="filme2">
+          <img src="lançamento4.jpg" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Capitão América<br><strong>Gênero:</strong> Ação</p>
+        </div>
+        <div class="filme2">
+          <img src="filme6.webp" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Capitã Marvel<br><strong>Gênero:</strong> Ação</p>
+        </div>
+        <div class="filme2">
+          <img src="../cinedicas/imagens/comédia2.jpg" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Os Parças<br><strong>Gênero:</strong> Comédia</p>
+        </div>
+        <div class="filme2">
+          <img src="terror 6.webp" alt="Favoritos" class="poster">
+          <p><strong>Título:</strong> Chucky<br><strong>Gênero:</strong> Terror</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <script src="scriptusuario.js"></script>
+  <footer>
+    <img src="logocinedica2.png" alt="logocinedica" id="logocinedica2">
+    <section>
+      <h4>SIGA-NOS:</h4>
+      <p>@Cinedica_oficial</p>
+      <p>(84) 9808-1288</p>
+    </section>
+    <section>
+      <h4>LINKS RÁPIDOS:</h4>
+      <p>Política de Privacidade</p>
+      <p>Termos de Uso</p>
+    </section>
+    <section>
+      <h4>SUPORTE:</h4>
+      <p>Central de Ajuda</p>
+      <p>Fale com o Suporte</p>
+      <p>Enviar Feedback</p>
+      <p>Relatar Problema no Site</p>
+    </section>
+  </footer>
+
+  <div class="copyright">
+    Copyright © 2025 CineDica – Todos os direitos reservados
+  </div>
+
+  <script src="scriptlading.js"></script>
+
 </body>
 </html>
